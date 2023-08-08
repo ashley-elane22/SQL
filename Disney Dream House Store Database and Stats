@@ -1,0 +1,29 @@
+CREATE TABLE disneydreamhouse (id INTEGER PRIMARY KEY, item TEXT, price NUMERIC);
+INSERT INTO disneydreamhouse VALUES (1, "Tumblr Cups",25);
+INSERT INTO disneydreamhouse VALUES (2, "Disney Shirts", 15);
+INSERT INTO disneydreamhouse VALUES (3, "Watchbands", 10);
+INSERT INTO disneydreamhouse VALUES (4, "Notebooks", 20);
+INSERT INTO disneydreamhouse VALUES (5, "Pens", 5);
+INSERT INTO disneydreamhouse VALUES (6, "Book bags", 35);
+INSERT INTO disneydreamhouse VALUES (7, "Crochet Blankets", 60);
+INSERT INTO disneydreamhouse VALUES (8, "Lanyards", 15);
+INSERT INTO disneydreamhouse VALUES (9, "Liscense plate covers", 15);
+INSERT INTO disneydreamhouse VALUES (10, "Socks", 5);
+INSERT INTO disneydreamhouse VALUES (11, "Shoes", 25);
+INSERT INTO disneydreamhouse VALUES (12, "Posters", 5);
+INSERT INTO disneydreamhouse VALUES (13, "Stickers", 2);
+INSERT INTO disneydreamhouse VALUES (14, "Button pins", 2);
+INSERT INTO disneydreamhouse VALUES (15, "Laptop covers", 15);
+
+
+SELECT * FROM disneydreamhouse;
+SELECT SUM(price) FROM disneydreamhouse;
+
+
+SELECT * FROM disneydreamhouse WHERE price <10;
+
+
+SELECT * FROM disneydreamhouse ORDER BY price;
+
+
+SELECT * FROM disneydreamhouse WHERE price <=60;
