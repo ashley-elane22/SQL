@@ -65,7 +65,17 @@ WHERE category = "Kitchen Supplies";
 
 SELECT *
 FROM superstore
+WHERE category="Kitchen Supplies"
+ORDER BY item_name asc;
+
+SELECT *
+FROM superstore
 WHERE category = "Kitchen Supplies" AND price<80;
+
+SELECT *
+FROM superstore
+WHERE category="Kitchen Supplies"
+AND price>=80;
 
 SELECT SUM(stock_quantity) AS Quantity
 FROM superstore WHERE item_id='9';
